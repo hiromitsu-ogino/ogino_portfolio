@@ -1,0 +1,435 @@
+@charset "UTF-8";
+/******************************************************************
+
+Stylesheet: ベーススタイル
+
+******************************************************************/
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Noto Serif JP", serif;
+  background-color: #fff1cf;
+}
+
+input,
+textarea {
+  font-size: 16px;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+.font-sm, .title__link, .about__component ul li, .about__introduction, .skills__other p, .bar {
+  font-size: 12px;
+}
+
+.font-md, .about__component p, .skills h3 {
+  font-size: 15px;
+}
+
+.font-lr {
+  font-size: 20px;
+}
+
+.font-lg {
+  font-size: 25px;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 35px;
+  background-color: #fff1cf;
+  z-index: 100;
+}
+
+header .inner {
+  margin-top: 3px;
+  height: 100%;
+  width: 100%;
+}
+
+header .flexbox {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+}
+
+.title {
+  margin-left: 5vw;
+}
+
+.title__link:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.title__text {
+  line-height: 0.2em;
+  margin: 10px 0px 10px 0;
+}
+
+.nav {
+  margin-right: 5vw;
+}
+
+.nav__item {
+  margin-left: 5vw;
+  text-align: center;
+  font-size: 0.6em;
+}
+
+.nav__link {
+  color: gray;
+}
+
+.nav__link:hover {
+  color: green;
+  text-decoration: none;
+}
+
+.nav__text {
+  line-height: 1em;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.btn-contact {
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
+
+.btn-contact:hover {
+  color: green;
+  text-decoration: none;
+}
+
+.modal-button {
+  width: auto;
+  background-color: gray;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 4px;
+  height: 40px;
+}
+
+.modal-button:hover {
+  background-color: rgba(144, 238, 144, 0.5);
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  border: none;
+}
+
+.home {
+  padding-top: -35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: bottom;
+      -ms-flex-align: bottom;
+          align-items: bottom;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  height: 100vh;
+  overflow: hidden;
+  background-size: cover !important;
+  background: url(/portfolio/img/home-background.jpg) no-repeat center center scroll;
+}
+
+.home__text {
+  font-weight: bold;
+  color: white;
+  font-size: 6vmin;
+  letter-spacing: 0.05em;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.about {
+  padding-top: 10vh;
+  height: 100vh;
+  background-image: url(/portfolio/img/take.png);
+  background-position: 80% 80%;
+  background-size: 50%;
+  background-repeat: no-repeat;
+}
+
+.about__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 20px 5vw;
+}
+
+.about__component {
+  margin-top: 5vh;
+}
+
+.about__component__item {
+  margin-top: 10px;
+}
+
+.about__component p {
+  line-height: 0.3;
+  font-weight: 900;
+}
+
+.about__component ul {
+  line-height: 1em;
+  padding: 0.1em;
+  list-style: none;
+}
+
+.about__component ul li {
+  position: relative;
+  padding: 0.1em 0.1em 0.1em 2em;
+}
+
+.about__component ul li:before {
+  position: absolute;
+  content: "";
+  top: 0.3em;
+  left: 1em;
+  height: 0;
+  width: 0;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-color: transparent transparent transparent black;
+}
+
+.about__introduction {
+  padding-top: 3vh;
+  line-height: 0.3em;
+}
+
+.about img {
+  height: 20vh;
+}
+
+.skills {
+  height: 100vh;
+  margin: 0px 5vw;
+}
+
+.skills h3 {
+  padding-top: 10px;
+  font-weight: 900;
+}
+
+.skills__other {
+  line-height: 1em;
+}
+
+.skills__other p {
+  padding: 0 0 0 10px;
+}
+
+.skill-graph {
+  width: calc(100% - 40px);
+  width: 100%;
+  max-width: 300px;
+  padding-top: 10vh;
+}
+
+.bar {
+  height: 20px;
+  max-width: 100%;
+  margin: 0 auto 10px auto;
+  line-height: 20px;
+  color: white;
+  padding: 0 0 0 10px;
+  position: relative;
+}
+
+.bar::before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  height: 20px;
+  top: 0;
+  z-index: -2;
+  background: #b8b6b6;
+}
+
+.bar::after {
+  content: "";
+  background: url(/portfolio/img/wagara.jpg) no-repeat center center scroll;
+  background-size: 600px;
+  height: 20px;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.bar1::after {
+  max-width: 70%;
+}
+
+.bar2::after {
+  max-width: 50%;
+}
+
+.bar3::after {
+  max-width: 30%;
+}
+
+.bar4::after {
+  max-width: 30%;
+}
+
+.bar5::after {
+  max-width: 50%;
+}
+
+.bar6::after {
+  max-width: 80%;
+}
+
+.bar7::after {
+  max-width: 20%;
+}
+
+.bar8::after {
+  max-width: 20%;
+}
+
+.works {
+  min-height: 100vh;
+  padding: 15vh 5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.works__item {
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
+  margin-bottom: 3vh;
+  position: relative;
+  height: 25vh;
+}
+
+.works__item__inner {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  background-color: rgba(128, 128, 128, 0.5);
+  text-align: center;
+}
+
+.works__item__inner p {
+  color: white;
+  line-height: 40px;
+}
+
+footer {
+  height: 50px;
+  text-align: center;
+  margin-left: aoto;
+}
+
+@media (min-width: 680px) {
+  /******************************************************************
+
+Stylesheet: 960px以上のモニタで適用
+
+******************************************************************/
+  .font-sm, .title__link, .about__component ul li, .about__introduction, .skills__other p, .bar {
+    font-size: 16px;
+  }
+  .font-md, .about__component p, .skills h3 {
+    font-size: 19px;
+  }
+  .font-lr {
+    font-size: 23px;
+  }
+  .font-lg {
+    font-size: 36px;
+  }
+  .nav {
+    margin-top: 5px;
+  }
+  .nav__item {
+    bottom: -10px;
+  }
+  .nav__text {
+    font-size: 20px;
+  }
+  .nav__icon {
+    display: none;
+  }
+  .nav__text {
+    line-height: 35px;
+  }
+  .about {
+    padding-top: 80px;
+    height: 100vh;
+  }
+  .about__container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 20px 5vw;
+  }
+  .about__introduction {
+    padding-top: 3vh;
+    line-height: 0.3em;
+  }
+  .about img {
+    height: 50vh;
+  }
+  .about__component {
+    margin: -25px 60px;
+  }
+  .about__component__item {
+    margin-top: 30px;
+  }
+  .works__item {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+    height: 30vh;
+  }
+}
+/*# sourceMappingURL=style.css.map */

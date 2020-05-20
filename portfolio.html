@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>おぎのportfolio</title>
+        <meta name="discriptions" content="This site is a Ogino site" />
+
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+            crossorigin="anonymous"
+        />
+
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;900&display=swap"
+            rel="stylesheet"
+        />
+
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        />
+        <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    </head>
+    <body>
+        <header>
+            <div class="inner">
+                <div class="flexbox">
+                    <div class="title">
+                        <a class="title__link" href="#">
+                            <p class="title__text">おぎの</p>
+                            <p class="title__text">Portfolio</p>
+                        </a>
+                    </div>
+                    <nav>
+                        <ul class="nav">
+                            <li class="nav__item">
+                                <a href="#home" class="nav__link"
+                                    ><i class="fas fa-2x fa-home nav__icon"></i>
+                                    <p class="nav__text">Home</p></a
+                                >
+                            </li>
+                            <li class="nav__item">
+                                <a href="#about" class="nav__link"
+                                    ><i
+                                        class="fas fa-2x fa-user-tie nav__icon"
+                                    ></i>
+                                    <p class="nav__text">About</p></a
+                                >
+                            </li>
+                            <li class="nav__item">
+                                <a href="#skills" class="nav__link"
+                                    ><i
+                                        class="fas fa-2x fa-tools nav__icon"
+                                    ></i>
+                                    <p class="nav__text">Skills</p></a
+                                >
+                            </li>
+                            <li class="nav__item">
+                                <a href="#works" class="nav__link"
+                                    ><i
+                                        class="fas fa-2x fa-briefcase nav__icon"
+                                    ></i>
+                                    <p class="nav__text">Works</p></a
+                                >
+                            </li>
+                            <li class="nav__item">
+                                <button
+                                    type="button"
+                                    class="btn-contact"
+                                    data-toggle="modal"
+                                    data-target="#exampleModal"
+                                >
+                                    <i
+                                        class="fas fa-2x fa-envelope nav__icon"
+                                    ></i>
+                                    <p class="nav__text">Contact</p>
+                                </button>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <!-- home -->
+        <section id="home" class="home" role="img">
+            <h1 class="home__text">
+                光を広めます
+            </h1>
+        </section>
+
+        <!-- about -->
+        <section id="about" class="about">
+            <div class="about__container">
+                <div class="about__portrait">
+                    <img src="/portfolio/img/portrait.JPG" alt="自画像" />
+                    <div class="about__introduction">
+                        <p>1993</p>
+                        <p>荻野広光</p>
+                        <p>群馬で子育て中</p>
+                    </div>
+                </div>
+
+                <div class="about__component">
+                    <div class="addd">
+                        <div class="about__component__item">
+                            <p>信条</p>
+                            <ul>
+                                <li>すべての人が先生</li>
+                                <li>おかげさまで幸せです</li>
+                            </ul>
+                        </div>
+
+                        <div class="about__component__item">
+                            <p>趣味</p>
+                            <ul>
+                                <li>そば打ち</li>
+                                <li>造園</li>
+                            </ul>
+                        </div>
+                        <div class="about__component__item">
+                            <p>目標</p>
+                            <ul>
+                                <li>周りの人を幸せにする</li>
+                                <li>群馬を世界に誇る街にする</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- skills -->
+        <section id="skills" class="skills">
+            <div class="skill-graph">
+                <h3>言語</h3>
+                <div class="bar bar1">HTML&CSS</div>
+                <div class="bar bar2">JavaScript</div>
+                <div class="bar bar3">Ruby</div>
+                <div class="bar bar4">PHP</div>
+                <div class="bar bar5">Python</div>
+                <h3>フレームワーク</h3>
+                <div class="bar bar6">Bootstrap</div>
+                <div class="bar bar7">Ruby on Rails</div>
+                <h3>DB</h3>
+                <div class="bar bar8">MySQL</div>
+            </div>
+            <div class="skills__other">
+                <h3>その他</h3>
+                <p>
+                    プロモーション,マーケティング,プロジェクトマネジメント,個人や組織のコーチング(ができるようになる予定。)
+                </p>
+            </div>
+        </section>
+
+        <!-- works -->
+        <section id="works" class="works">
+            <div
+                class="works__item"
+                style="background-image: url(/portfolio/img/A7.png);"
+            >
+                <div class="works__item__inner">
+                    <p class="works__title">work 1</p>
+                </div>
+            </div>
+            <div
+                class="works__item"
+                style="background-image: url(/portfolio/img/A7.png);"
+            >
+                <div class="works__item__inner">
+                    <p class="works__title">work 2</p>
+                </div>
+            </div>
+            <div
+                class="works__item"
+                style="background-image: url(/portfolio/img/A7.png);"
+            >
+                <div class="works__item__inner">
+                    <p class="works__title">work 3</p>
+                </div>
+            </div>
+            <div
+                class="works__item"
+                style="background-image: url(/portfolio/img/A7.png);"
+            >
+                <div class="works__item__inner">
+                    <p class="works__title">work 4</p>
+                </div>
+            </div>
+            <div
+                class="works__item"
+                style="background-image: url(/portfolio/img/A7.png);"
+            >
+                <div class="works__item__inner">
+                    <p class="works__title">work 5</p>
+                </div>
+            </div>
+            <div
+                class="works__item"
+                style="background-image: url(/portfolio/img/A7.png);"
+            >
+                <div class="works__item__inner">
+                    <p class="works__title">work 6</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>&copy; おぎの</footer>
+
+        <!-- お問い合わせフォーム -->
+        <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            role="dialog"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                            <p>お問い合わせ内容を記入ください。</p>
+                        </h5>
+                        <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                        >
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- お問い合わせ内容記入欄 -->
+                        <form>
+                            <div class="form-row form-group">
+                                <div class="col">
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="inputLastname"
+                                        placeholder="姓(必須)"
+                                    />
+                                </div>
+                                <div class="col">
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="inputFirstname"
+                                        placeholder="名(必須)"
+                                    />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input
+                                    type="text"
+                                    class="form-control col-auto"
+                                    id="inputEmail"
+                                    aria-describedby="emailHelp"
+                                    placeholder="メールアドレス(必須)"
+                                />
+                            </div>
+                            <div class="form-group">
+                                <input
+                                    type="text"
+                                    class="form-control col-auto"
+                                    id="inputAsk"
+                                    placeholder="件名(必須)"
+                                />
+                            </div>
+                            <div class="form-group">
+                                <textarea
+                                    type="text"
+                                    class="form-control col-auto"
+                                    id="inputAsk"
+                                    placeholder="お問い合わせ内容を記入ください。(必須 20文字以上)"
+                                    rows="5"
+                                ></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="modal-button">
+                            送信
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>

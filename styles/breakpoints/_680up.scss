@@ -1,0 +1,71 @@
+/******************************************************************
+
+Stylesheet: 960px以上のモニタで適用
+
+******************************************************************/
+.font-sm {
+    font-size: 16px;
+}
+.font-md {
+    font-size: 19px;
+}
+.font-lr {
+    font-size: 23px;
+}
+.font-lg {
+    font-size: 36px;
+}
+
+.nav {
+    margin-top: 5px;
+    &__item {
+        bottom: -10px;
+    }
+    &__text {
+        font-size: 20px;
+    }
+
+    &__icon {
+        display: none;
+    }
+}
+
+.nav {
+    &__text {
+        line-height: 35px;
+    }
+}
+
+.about {
+    padding-top: 80px;
+    height: 100vh;
+
+    &__container {
+        flex-direction: row;
+        margin: 20px 5vw;
+    }
+
+    &__introduction {
+        padding-top: 3vh;
+        line-height: 0.3em;
+    }
+
+    img {
+        height: 50vh;
+    }
+
+    &__component {
+        margin: -25px 60px;
+
+        &__item {
+            margin-top: 30px;
+        }
+    }
+}
+
+.works {
+    &__item {
+        flex-basis: 30%;
+        height: 30vh;
+    }
+}

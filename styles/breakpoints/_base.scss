@@ -1,0 +1,335 @@
+/******************************************************************
+
+Stylesheet: ベーススタイル
+
+******************************************************************/
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Noto Serif JP", serif;
+    background-color: #fff1cf;
+}
+
+input,
+textarea {
+    font-size: 16px;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+.font-sm {
+    font-size: 12px;
+}
+.font-md {
+    font-size: 15px;
+}
+.font-lr {
+    font-size: 20px;
+}
+.font-lg {
+    font-size: 25px;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 35px;
+    background-color: #fff1cf;
+    z-index: 100;
+
+    .inner {
+        margin-top: 3px;
+        height: 100%;
+        width: 100%;
+    }
+
+    .flexbox {
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+.title {
+    margin-left: 5vw;
+    &__link {
+        @extend .font-sm;
+
+        &:hover {
+            color: black;
+            text-decoration: none;
+        }
+    }
+    &__text {
+        line-height: 0.2em;
+        margin: 10px 0px 10px 0;
+    }
+}
+
+.nav {
+    margin-right: 5vw;
+
+    &__item {
+        margin-left: 5vw;
+        text-align: center;
+        font-size: 0.6em;
+    }
+
+    &__link {
+        color: gray;
+
+        &:hover {
+            color: green;
+            text-decoration: none;
+        }
+    }
+
+    &__text {
+        line-height: 1em;
+    }
+}
+
+button:focus {
+    outline: 0;
+}
+
+.btn-contact {
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+
+    &:hover {
+        color: green;
+        text-decoration: none;
+    }
+}
+
+.modal-button {
+    width: auto;
+    background-color: gray;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 4px;
+    height: 40px;
+
+    &:hover {
+        background-color: rgba(144, 238, 144, 0.5);
+        transition: 500ms;
+        border: none;
+    }
+}
+
+.home {
+    padding-top: -35px;
+    display: flex;
+    justify-content: center;
+    align-items: bottom;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+    overflow: hidden;
+    background-size: cover !important;
+    background: url(/portfolio/img/home-background.jpg) no-repeat center center
+        scroll;
+
+    &__text {
+        font-weight: bold;
+        color: white;
+        font-size: 6vmin;
+        letter-spacing: 0.05em;
+        text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.8);
+    }
+}
+
+.about {
+    padding-top: 10vh;
+    height: 100vh;
+    background-image: url(/portfolio/img/take.png);
+    background-position: 80% 80%;
+    background-size: 50%;
+    background-repeat: no-repeat;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 5vw;
+    }
+    &__component {
+        margin-top: 5vh;
+
+        &__item {
+            margin-top: 10px;
+        }
+        p {
+            @extend .font-md;
+            line-height: 0.3;
+            font-weight: 900;
+        }
+
+        ul {
+            line-height: 1em;
+            padding: 0.1em;
+            list-style: none;
+        }
+        ul li {
+            @extend .font-sm;
+            position: relative;
+            padding: 0.1em 0.1em 0.1em 2em;
+        }
+        ul li:before {
+            position: absolute;
+            content: "";
+            top: 0.3em;
+            left: 1em;
+            height: 0;
+            width: 0;
+            border-style: solid;
+            border-width: 5px 0 5px 5px;
+            border-color: transparent transparent transparent black;
+        }
+    }
+
+    &__introduction {
+        padding-top: 3vh;
+        line-height: 0.3em;
+        @extend .font-sm;
+    }
+
+    img {
+        height: 20vh;
+    }
+}
+
+.skills {
+    height: 100vh;
+    margin: 0px 5vw;
+
+    h3 {
+        @extend .font-md;
+        padding-top: 10px;
+        font-weight: 900;
+    }
+
+    &__other {
+        line-height: 1em;
+
+        p {
+            padding: 0 0 0 10px;
+            @extend .font-sm;
+        }
+    }
+}
+
+.skill-graph {
+    width: calc(100% - 40px);
+    width: 100%;
+    max-width: 300px;
+    padding-top: 10vh;
+}
+
+.bar {
+    height: 20px;
+    max-width: 100%;
+    margin: 0 auto 10px auto;
+    line-height: 20px;
+    color: white;
+    padding: 0 0 0 10px;
+    position: relative;
+    @extend .font-sm;
+
+    &::before {
+        content: "";
+        width: 100%;
+        position: absolute;
+        left: 0;
+        height: 20px;
+        top: 0;
+        z-index: -2;
+        background: rgb(184, 182, 182);
+    }
+    &::after {
+        content: "";
+        background: url(/portfolio/img/wagara.jpg) no-repeat center center
+            scroll;
+        background-size: 600px;
+        height: 20px;
+        transition: 0.7s;
+        display: block;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+}
+.bar1::after {
+    max-width: 70%;
+}
+.bar2::after {
+    max-width: 50%;
+}
+.bar3::after {
+    max-width: 30%;
+}
+.bar4::after {
+    max-width: 30%;
+}
+.bar5::after {
+    max-width: 50%;
+}
+.bar6::after {
+    max-width: 80%;
+}
+.bar7::after {
+    max-width: 20%;
+}
+.bar8::after {
+    max-width: 20%;
+}
+
+.works {
+    min-height: 100vh;
+    padding: 15vh 5vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__item {
+        flex-basis: 48%;
+        margin-bottom: 3vh;
+        position: relative;
+        height: 25vh;
+
+        &__inner {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 30px;
+            background-color: rgba(128, 128, 128, 0.5);
+            text-align: center;
+
+            p {
+                color: white;
+                line-height: 40px;
+            }
+        }
+    }
+}
+
+footer {
+    height: 50px;
+    text-align: center;
+    margin-left: aoto;
+}
