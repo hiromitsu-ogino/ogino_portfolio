@@ -159,7 +159,7 @@ button:focus {
   height: 100vh;
   overflow: hidden;
   background-size: cover !important;
-  background: url(/portfolio/img/home-background.jpg) no-repeat center center scroll;
+  background: url(../img/home-background.jpg) no-repeat center center scroll;
 }
 
 .home__text {
@@ -173,7 +173,7 @@ button:focus {
 .about {
   padding-top: 10vh;
   height: 100vh;
-  background-image: url(/portfolio/img/take.png);
+  background-image: url(../img/take.png);
   background-position: 80% 80%;
   background-size: 50%;
   background-repeat: no-repeat;
@@ -283,7 +283,7 @@ button:focus {
 
 .bar::after {
   content: "";
-  background: url(/portfolio/img/wagara.jpg) no-repeat center center scroll;
+  background: url(../img/wagara.jpg) no-repeat center center scroll;
   background-size: 600px;
   height: 20px;
   -webkit-transition: 0.7s;
