@@ -199,19 +199,19 @@ button:focus {
 }
 
 .about__component p {
-  line-height: 0.3;
   font-weight: 900;
+  margin-bottom: 0.3em;
 }
 
 .about__component ul {
   line-height: 1em;
-  padding: 0.1em;
+  padding-left: 0.1em;
   list-style: none;
 }
 
 .about__component ul li {
   position: relative;
-  padding: 0.1em 0.1em 0.1em 2em;
+  padding: 0 0.1em 0.1em 2em;
 }
 
 .about__component ul li:before {
@@ -365,8 +365,14 @@ button:focus {
 
 footer {
   height: 50px;
-  text-align: center;
-  margin-left: aoto;
+  text-align: left;
+  margin-left: 5vw;
+}
+
+.error-message {
+  color: #eb6464;
+  font-size: 12px;
+  margin-left: 12px;
 }
 
 @media (min-width: 680px) {
